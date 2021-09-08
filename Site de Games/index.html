@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="LPH, GAME, MARIO">
+    <meta name="description" content="Loja do leo">
+    <meta name="author" content="Leandro de Oliveira Custódio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPH STORE</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/lph3.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/587541520f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+<!----------------------------------Navegação--------------------------------->
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-1 fixed-top">
+    <div class="container">
+      <img id="logolph" src="img/lphred.png" alt="" title="&copy;LPH STORE">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i id="bar" class="fas fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+         
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="produtos.html">COMPRAR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">OFERTAS DO DIA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">SOBRE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">LOGIN</a>
+          </li>
+          <li class="nav-item">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-shopping-bag"></i>
+          </li>
+         
+      </div>
+    </div>
+  </nav>
+<!--------------------------------Banner Principal--------------------------------->  
+<section id="home">
+<div class="container">
+    <h5>NOVAS OFERTAS</h5>
+    <h1><span>Melhor Preço</span> Esse Ano</h1>
+    <p>Jogos inesquecíveis para<br> todos os tipos de jogadores!</p>
+    <button onclick="document.location='rdr2.html'">Compre Agora</button>
+</div>
+</section>
+<!-----------------------------------------Parceiros------------------------------->
+<section id="brand" class="container">
+  <div class="row m-0 py-5">
+    <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/capcom.png" alt="" title="&copy;Capcom">
+    <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/bandai.png" alt="" title="&copy;Bandai Namco">
+    <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/rockstar.png" alt="" title="&copy;Rockstar">
+    <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/psyonix.png" alt="" title="&copy;Psyonix">
+    <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/square.png" alt="" title="&copy;Square Enix">
+    <img class="img-fluid col-lg-2 col-md-4 col-6" src="img/sega.png" alt="" title="&copy;Sega">
+    
+  </div> 
+</section>
+<!---------------------------Seleção de página de compra 1--------------------------->
+<section id="new" class="w-100" >
+  <div class="row p-0 m-0">
+     <div class="one col-lg-4 col-md-12 col-12 p-0">
+       <img class="img-fluid" src="img/gta1.jpg" alt="">
+       <div class="details">
+           <h2>Jogos de Tiro</h2>
+           <button onclick="document.location='tiro.html'">Conferir Preços</button>
+       </div>
+     </div>
+     <div class="one col-lg-4 col-md-12 col-12 p-0">
+      <img class="img-fluid" src="img/street2.jpg" alt="">
+      <div class="details">
+          <h2>Jogos de Luta</h2>
+          <button onclick="document.location='luta.html'">Conferir Preços</button>
+      </div>
+    </div>
+    <div class="one col-lg-4 col-md-12 col-12 p-0">
+      <img class="img-fluid" src="img/forza1.jpg" alt="">
+      <div class="details">
+          <h2>Jogos de Corrida</h2>
+          <button onclick="document.location='corrida.html'">Conferir Preços</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!---------------------------------Sessão Jogos Populares--------------------------->
+<section id="featured" class="my-5 pb-5">
+  <div class="container text-center mt-5 py-5">
+    <h3>Jogos Populares</h3>
+    <hr class="mx-auto">
+    <p>Confira os novos games em estoque.</p>
+  </div>
+  <div class="row mx-auto container-fluid">
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img button onclick="document.location='takestwo.html'" class="img-fluid mb-3" src="img/takestwo.jpg" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">It Takes Two</h5>
+      <h4 class="p-price">R$150</h4>
+      <button class="buy-btn">Conferir Preço</button>
+    </div>
+    <div button onclick="document.location='minecraft.html'" class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/minecraft.jpg" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Minecraft</h5>
+      <h4 class="p-price">R$150</h4>
+      <button class="buy-btn">Conferir Preço</button>
+    </div>
+    <div  button onclick="document.location='gta5.html'" class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/gtav.jpg" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Grand Theft Auto V</h5>
+      <h4 class="p-price">R$120</h4>
+      <button class="buy-btn">Conferir Preço</button>
+    </div>
+    <div button onclick="document.location='residentvillage.html'" class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/resident.jpg" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Resident Evil Village</h5>
+      <h4 class="p-price">R$150</h4>
+      <button class="buy-btn">Conferir Preço</button>
+    </div>
+  </div>
+</section>
+<!------------------------------------Banner 2-------------------------------------->
+<section id="banner" class="my-5 py-5">
+  <div class="container">
+    <h4>Mortal Kombat 11 Ultimate</h4>
+    <h1>Mileena, Rain e Rambo<br> Se Juntaram á luta!!!</h1>
+    <button onclick="document.location='mk11.html'" class="text-uppercase">Compre Agora</button>
+  </div>
+</section>
+<!-----------------------------------Comentários------------------------------------>
+<div class="container">
+   <div class="testimonial">
+     <div class=""small-container>
+       <div class="row">
+         <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Corporis nisi id fuga, praesentium alias enim! Iste
+              voluptates corrupti, rerum deleniti doloribus asperiores 
+              molestias sint ut officia explicabo aliquam sapiente unde?</p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <img src="img/pessoa1.jpg">
+              <h3>Yasmin Yamamoto</h3>
+         </div>
+         <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Corporis nisi id fuga, praesentium alias enim! Iste
+              voluptates corrupti, rerum deleniti doloribus asperiores 
+              molestias sint ut officia explicabo aliquam sapiente unde?</p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <img src="img/pessoa2.jpg">
+              <h3>Jackson Jones</h3>
+         </div>
+         <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Corporis nisi id fuga, praesentium alias enim! Iste
+              voluptates corrupti, rerum deleniti doloribus asperiores 
+              molestias sint ut officia explicabo aliquam sapiente unde?</p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <img src="img/pessoa3.jpg">
+              <h3>Caroline Charlotte</h3>
+         </div>
+         <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Corporis nisi id fuga, praesentium alias enim! Iste
+              voluptates corrupti, rerum deleniti doloribus asperiores 
+              molestias sint ut officia explicabo aliquam sapiente unde?</p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+              </div>
+              <img src="img/pessoa4.jpg">
+              <h3>Jotaro Kujo</h3>
+         </div>
+       </div>
+     </div>
+   </div>
+  </div>
+<!-------------------------------------Sessão Consoles------------------------------->
+<section id="consoles" class="my-5 pb-5">
+  <div class="container text-center mt-5 py-5">
+    <h3>Consoles</h3>
+    <hr class="mx-auto">
+    <p>Confira os novos consoles em estoque.</p>
+  </div>
+  <div class="row mx-auto container-fluid">
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/xboxseries.jpg" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Xbox Series X</h5>
+      <h4 class="p-price">R$5.770,00</h4>
+      <button class="buy-btn">Conferir Preço</button>
+    </div>
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/ps5.jpg" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Playstation 5</h5>
+      <h4 class="p-price">R$5.800,00</h4>
+      <button class="buy-btn">Conferir Preço</button>
+    </div>
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/xboxone.jpg" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Xbox One S</h5>
+      <h4 class="p-price">R$2.500,00</h4>
+      <button class="buy-btn">Xbox One S</button>
+    </div>
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/ps4.jpg" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Playstation 4</h5>
+      <h4 class="p-price">R$2.500,00</h4>
+      <button class="buy-btn">Conferir Preço</button>
+    </div>
+  </div>
+</section>
+<!----------------------------------Sessão Jogos Xbox--------------------------------->
+<section id="xbox" class="my-5 pb-5">
+  <div class="container text-center mt-5 py-5">
+    <h3>Jogos Populares de Xbox</h3>
+    <hr class="mx-auto">
+    <p>Confira os novos games de Xbox em estoque.</p>
+  </div>
+  <div class="row mx-auto container-fluid">
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/halo2.jpg" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Halo 5</h5>
+      <h4 class="p-price">R$150</h4>
+      <button class="buy-btn">Conferir Preço</button>
+    </div>
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/forza.GIF" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Forza Horizon 4</h5>
+      <h4 class="p-price">R$150</h4>
+      <button class="buy-btn">Conferir Preço</button>
+    </div>
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/guears5.jpg" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Guears of War 5</h5>
+      <h4 class="p-price">R$150</h4>
+      <button class="buy-btn">Conferir Preço</button>
+    </div>
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/recore.GIF" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Recore</h5>
+      <h4 class="p-price">R$150</h4>
+      <button class="buy-btn">Conferir Preço</button>
+    </div>
+  </div>
+</section>
+<!----------------------------Sessão Jogos Playstation------------------------------>
+<section id="playstation" class="my-5 pb-5">
+  <div class="container text-center mt-5 py-5">
+    <h3>Jogos Populares de Playstation</h3>
+    <hr class="mx-auto">
+    <p>Confira os novos games de Playstation em estoque.</p>
+  </div>
+  <div class="row mx-auto container-fluid">
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/godofwar.jpg" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">God Of War</h5>
+      <h4 class="p-price">R$150</h4>
+      <button class="buy-btn">Conferir Preço</button>
+    </div>
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/thelastofus.jpg" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">The Last of Us Part II</h5>
+      <h4 class="p-price">R$150</h4>
+      <button class="buy-btn">Conferir Preço</button>
+    </div>
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/miranha.jpg" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Spider-Man Miles Morales</h5>
+      <h4 class="p-price">R$150</h4>
+      <button class="buy-btn">Conferir Preço</button>
+    </div>
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/horizonzero.jpg" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Horizon Zero Dawn</h5>
+      <h4 class="p-price">R$150</h4>
+      <button class="buy-btn">Conferir Preço</button>
+    </div>
+  </div>
+</section>
+<!------------------------------Sessão Jogos Nintendo------------------------------->
+<section id="nintendo" class="my-5 pb-5">
+  <div class="container text-center mt-5 py-5">
+    <h3>Jogos Populares de Nintendo</h3>
+    <hr class="mx-auto">
+    <p>Confira os novos games de Nintendo em estoque.</p>
+  </div>
+  <div class="row mx-auto container-fluid">
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/zelda.jpg" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Zelda Breath of the Wild</h5>
+      <h4 class="p-price">R$150</h4>
+      <button class="buy-btn">Conferir Preço</button>
+    </div>
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/mariokart.jpg" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Super Mario Kart 8</h5>
+      <h4 class="p-price">R$150</h4>
+      <button class="buy-btn">Conferir Preço</button>
+    </div>
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/smash.png" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Super Smash Bros Ultimate</h5>
+      <h4 class="p-price">R$150</h4>
+      <button class="buy-btn">Conferir Preço</button>
+    </div>
+    <div class="product text-center col-lg-3 col-md-4 col-12">
+      <img class="img-fluid mb-3" src="img/mariomaker.jpg" alt="">
+      <div class="star">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h5 class="p-name">Super Mario Maker 2</h5>
+      <h4 class="p-price">R$150</h4>
+      <button class="buy-btn">Conferir Preço</button>
+    </div>
+  </div>
+</section>
+<!--------------------------------------Footer-------------------------------------->
+<section class="footer" class="mt-5 py-5">
+  <div class="row container mx-auto pt-5">
+    <div class="footer-one col-lg-3 col-md-6 col-12">
+    <img src="img/lph.png" alt="">
+    <p class="pt-3">LPH Store é o lugar onde você encontra os melhores games pelo melhor preço.</p>
+  </div>
+  <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+    <h5 class="pb-2">Featured</h5>
+    <ul class="text-uppercase list-unstyled">
+      <li><a href="#">Jogos</a></li>
+      <li><a href="#">Consoles</a></li>
+      <li><a href="#">Xbox</a></li>
+      <li><a href="#">Playstation</a></li>
+      <li><a href="#">Nintendo</a></li>
+    </ul>
+  </div>
+  <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+    <h5 class="pb-2">Contato</h5>
+    <div>
+      <h6 class="text-uppercase">Endereço</h6>
+      <p>Rua casa do caixa prego numero 0</p>
+    </div>
+    <div>
+      <h6 class="text-uppercase">Telefone</h6>
+      <p>+55 (11) 4002.8922</p>
+    </div>
+    <div>
+      <h6 class="text-uppercase">E-mail</h6>
+      <p>Salve.Ocorinthians@Yahoo.com</p>
+    </div>
+  </div>
+  <div class="footer-one col-lg-3 col-md-6 col-12">
+    <h5 class="pb-2">Instagram</h5>
+    <div class="row">
+      <img class="img-fluid w-25 h-100 m-2" src="img/jogos1.jpg" alt="">
+      <img class="img-fluid w-25 h-100 m-2" src="img/jogos2.jpg" alt="">
+      <img class="img-fluid w-25 h-100 m-2" src="img/jogos3.jpg" alt="">
+      <img class="img-fluid w-25 h-100 m-2" src="img/jogos4.jpg" alt="">
+      <img class="img-fluid w-25 h-100 m-2" src="img/jogos5.jpg" alt="">
+    </div>
+  </div>
+  <div class="copyright mt-5">
+    <div class="row container mx-autp">
+      <div class="col-lg-3 col-md-6 col-12 mb-4">
+        <img src="img/pagamento2.png" alt="">
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+        <p id="tra">Volte Sempre :></p>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
+<!--------------------------------------Rodapé--------------------------------------->
+<footer class="rodape">
+        <p>&copy;TEAM LPH STORE - Todos os Direitos Reservados
+        </p>
+    </footer> 
+<!-------------------------------------Script---------------------------------------->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" 
+    integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" 
+    integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" 
+    crossorigin="anonymous"></script> 
+</body>
+</html>
